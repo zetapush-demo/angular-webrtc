@@ -416,7 +416,6 @@ export class WebrtcService {
             console.log('OnTrackEvent', event)
             const video = this.remoteVideo;
             video.srcObject = event.streams[0];
-            video.play()
         };
 
         this.pc.onaddstream = event => {
