@@ -1,0 +1,18 @@
+.input {
+  width: 20%;
+}
+
+.title {
+  width: 50vw;
+  margin: auto;
+  text-align: center;
+}
+
+.frame, .frame-video {
+  margin: 5%;
+}
+
+.frame-video {
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,38 @@
+<h1 class="label title">{{title}}</h1>
+
+<div class="frame">
+  <h3>Connexion</h3>
+  <input [(ngModel)]="loginName" placeholder="Login" class="input" value="{{loginName}}">
+  <input type="password" [(ngModel)]="password" placeholder="Password" class="input" value="{{password}}">
+  <button class="button" (click)="connexion()">Connect</button>
+</div>
+
+<div class="frame">
+    <h3>Room</h3>
+  <input [(ngModel)]="publicRoomName" placeholder="Public Room name" class="input" value="{{publicRoomName}}">
+  <button class="button btnCall" (click)="joinPublicRoom()">Join Public Room</button>
+  <button class="button btnCall" (click)="leavePublicRoom()">Leave Public Room</button>
+</div>
+
+<div class="frame">
+    <h3>Video</h3>
+    <button id="toggleAudio" class="button" (click)="toggleAudio()">Toggle audio</button>
+    <button id="toggleVideo" class="button" (click)="toggleVideo()">Toggle video</button>
+    <button id="switchCamera" class="button" (click)="switchCamera()">Switch camera</button>
+</div>
+
+<!-- Videos -->
+
+<div class="frame-video">
+
+  
+  <div>
+      <h3>Local video</h3>
+      <video muted id="localVideo" height="200" autoplay></video>
+  </div>
+
+  <div>
+      <h3>Remote video</h3>
+      <video id="remoteVideo" height="200" autoplay></video>
+  </div>
+</div>
